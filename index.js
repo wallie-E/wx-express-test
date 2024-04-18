@@ -5,7 +5,7 @@ const morgan = require("morgan");
 const { init: initDB, Counter } = require("./db");
 
 const logger = morgan("tiny");
-
+console.log('hhh')
 const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
